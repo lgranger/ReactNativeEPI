@@ -1,63 +1,68 @@
 
-##Typescript
+## Typescript
 
-####repl
+#### repl
 * `node` opens command-line javascript repl
 * `.exit` to exit node repl
 
-####compile
+#### compile
 *typescript compiles to javascript, which is then run as a script*
 * `ts <filename>.ts` from command-line in directory of typescript file
 * run generated <filename>.js as script
 
-####script
+#### script
 * `node <filename>.js` from command-line in directory of js file
 
-####accepting CLI arguments
+#### accepting CLI arguments
 * add to program to grab & assign to `arg` and array of the arguments from the command line: `let arg = process.argv.slice(2);` 
 * run program with arguments: `node <filename>.js <argument>`
+   
+###### references
+https://code.visualstudio.com/docs/typescript/typescript-compiling
 
-##Kotlin
+## Kotlin
 
-####repl
+#### repl
 * `kotlinc-jvm` from the command-line
 * `:quit` to exit kotlin repl
 
-####compile
+#### compile
 * `kotlinc <filename>.kt -include-runtime -d <programName>.jar` from commad-line in directory of kotlin file
 * `java -jar <programName>.jar` to run program 
 
-####scripting
+#### scripting
 * kotlin script files end with `.kts` instead of `.kt`
 * `kotlinc -script <filename>.kt <args>` to run script
 * CLI arguments are in an array that can be accessed with `val arguments = args`
 
-######references
+###### references
 https://kotlinlang.org/docs/command-line.html
 
-##Swift
+## Swift
 
-####repl
+#### repl
 * `swift` opens command-line repl
 * `:q` to exit swift repl
 
-####compiling
+#### compiling
 * `swiftc -o <programName> <fileName>.swift` from command-line in directory of swift program file
 * `./<fileName>.swift` to run program
 
-####scripting
+#### scripting
 * `#!/usr/bin/swift` at the top of the file
 * `chmod +x <filename>.swift from command-line in directory of swift script
 * `./<filename>.swift` to run script
 
-####accepting CLI arguments
+#### accepting CLI arguments
 * add to program to grab & assign arguments from the command line: `let arg = CommandLine.arguments[1]`
 * run program with arguments:
     * script: `./<filename>.swift <argument>
     * program: `./<programName> <argument>`
 
-######References
+###### references
 https://jblevins.org/log/swift
+   
 https://ed.com/command-line-swift/
+
 https://developer.apple.com/documentation/swift/commandline
 
