@@ -46,7 +46,7 @@ https://kotlinlang.org/docs/command-line.html
 
 #### compiling
 * `swiftc -o <programName> <fileName>.swift` from command-line in directory of swift program file
-* `./<fileName>.swift` to run program
+* `./<fileName>` to run program
 
 #### scripting
 * `#!/usr/bin/swift` at the top of the file
