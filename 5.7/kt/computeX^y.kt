@@ -5,6 +5,8 @@ fun raiseToPower(x: Double, y: Int) {
 }
 
 fun main() {
-    raiseToPower(3.0, 3)
-    raiseToPower(3.1, 3)
+    //base test
+    raiseToPower(3.0, 3) //27
+    // test first can be fractional float
+    raiseToPower(3.1, 3) //29.791000000000004
 }
