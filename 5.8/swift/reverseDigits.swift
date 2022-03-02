@@ -6,7 +6,7 @@ func reverseDigits(n: Int) -> Int {
 	var reversed = digit
 	while n != 0 {
 		digit = n % 10
-		n = (n - digit) / 10
+		n = n/10
 		reversed = (reversed * 10) + digit
 	}
 	return reversed
